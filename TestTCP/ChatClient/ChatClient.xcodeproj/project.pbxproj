@@ -12,7 +12,6 @@
 		30332DE61AF86EBB000F7A5E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30332DE51AF86EBB000F7A5E /* ViewController.m */; };
 		30332DE91AF86EBB000F7A5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30332DE71AF86EBB000F7A5E /* Main.storyboard */; };
 		30332DEB1AF86EBB000F7A5E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30332DEA1AF86EBB000F7A5E /* Images.xcassets */; };
-		30332DEE1AF86EBB000F7A5E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30332DEC1AF86EBB000F7A5E /* LaunchScreen.xib */; };
 		30332DFA1AF86EBB000F7A5E /* ChatClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30332DF91AF86EBB000F7A5E /* ChatClientTests.m */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +35,6 @@
 		30332DE51AF86EBB000F7A5E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		30332DE81AF86EBB000F7A5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30332DEA1AF86EBB000F7A5E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		30332DED1AF86EBB000F7A5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		30332DF31AF86EBB000F7A5E /* ChatClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30332DF81AF86EBB000F7A5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30332DF91AF86EBB000F7A5E /* ChatClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatClientTests.m; sourceTree = "<group>"; };
@@ -81,13 +79,10 @@
 		30332DDC1AF86EBB000F7A5E /* ChatClient */ = {
 			isa = PBXGroup;
 			children = (
-				30332DE11AF86EBB000F7A5E /* AppDelegate.h */,
-				30332DE21AF86EBB000F7A5E /* AppDelegate.m */,
-				30332DE41AF86EBB000F7A5E /* ViewController.h */,
-				30332DE51AF86EBB000F7A5E /* ViewController.m */,
-				30332DE71AF86EBB000F7A5E /* Main.storyboard */,
+				30332E051AF872CD000F7A5E /* Model */,
+				30332E031AF872A9000F7A5E /* Controller */,
+				30332E041AF872C4000F7A5E /* View */,
 				30332DEA1AF86EBB000F7A5E /* Images.xcassets */,
-				30332DEC1AF86EBB000F7A5E /* LaunchScreen.xib */,
 				30332DDD1AF86EBB000F7A5E /* Supporting Files */,
 			);
 			path = ChatClient;
@@ -96,6 +91,8 @@
 		30332DDD1AF86EBB000F7A5E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				30332DE11AF86EBB000F7A5E /* AppDelegate.h */,
+				30332DE21AF86EBB000F7A5E /* AppDelegate.m */,
 				30332DDE1AF86EBB000F7A5E /* Info.plist */,
 				30332DDF1AF86EBB000F7A5E /* main.m */,
 			);
@@ -117,6 +114,30 @@
 				30332DF81AF86EBB000F7A5E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		30332E031AF872A9000F7A5E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				30332DE41AF86EBB000F7A5E /* ViewController.h */,
+				30332DE51AF86EBB000F7A5E /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		30332E041AF872C4000F7A5E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				30332DE71AF86EBB000F7A5E /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		30332E051AF872CD000F7A5E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +221,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				30332DE91AF86EBB000F7A5E /* Main.storyboard in Resources */,
-				30332DEE1AF86EBB000F7A5E /* LaunchScreen.xib in Resources */,
 				30332DEB1AF86EBB000F7A5E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,14 +270,6 @@
 				30332DE81AF86EBB000F7A5E /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		30332DEC1AF86EBB000F7A5E /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				30332DED1AF86EBB000F7A5E /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

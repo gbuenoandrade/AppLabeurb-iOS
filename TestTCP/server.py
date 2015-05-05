@@ -11,7 +11,6 @@ class IphoneChat(Protocol):
 		self.factory.clients.remove(self)
 	def dataReceived(self, data):
 		a = data.split(':')
-		print a
 		if len(a) > 1:
 			command = a[0]
 			content = a[1]
@@ -19,11 +18,12 @@ class IphoneChat(Protocol):
 			if command == "iam":
 				self.name = content
 				msg = self.name + " has joined"
+				print msg
 			elif command == "msg":
 				msg = self.name + ": " + content
 				print msg
-			for c in self.factory.clients:
-				c.message(msg)
+				for c in self.factory.clients:
+					c.message(msg)
 	def message(self, message):
 		self.transport.write(message + '\n')
 
